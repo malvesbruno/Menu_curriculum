@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background: url(../imgs/photo-1641895949711-4269f58f2b5c.jpg);
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: center;
+    background-size: cover;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+
+  .linkedin_icon{
+    position: absolute;
+    background: url(/src/imgs/vecteezy_linkedin-logo-png-linkedin-logo-transparent-png-linkedin_23986970.png);
+    width: 1em;
+    height: 1em;
+  }
+
+  .filter{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.423);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  
+  /* Container principal */
+  .container {
+    text-align: center;
+    background: #8653fc21;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 20px #0e76a8;
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 400px;
+    animation: forwards 2s cubic-bezier(0.68, -0.55, 0.27, 1.55) appear_up;
+  }
+
+  .container:hover{
+    transform: scale(151%);
+    transition: 1s;
+  }
+
+  .container:not(:hover){
+    transform: scale(100%);
+    transition: 1s;
+  }
+  
+  
+  /* Título e descrição */
+  h1 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #fdfdfd;
+  }
+  
+  p {
+    margin-bottom: 20px;
+    font-size: 1rem;
+    color: #cccccc;
+  }
+  
+  /* Botões */
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+
+  
+  .btn {
+    text-decoration: none;
+    color: #fff;
+    padding: 12px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1rem;
+    border: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    box-shadow: 0px 0px 10px #0e77a85b;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-self: center;
+    width: 60%;
+    cursor: pointer;
+  }
+
+  .btn:hover{
+    transform: scale(110%);
+    transition: 2s;
+  }
+
+  .btn:not(:hover){
+    transform: scale(100%);
+    transition: 1s;
+  }
+  
+  /* Estilo individual de botões */
+  .btn.linkedin {
+    background-color: #005db4;
+  }
+  
+  .btn.linkedin:hover {
+    background-color: #085c8c;
+  }
+  
+  .btn.github {
+    background-color: #171515 ;
+  }
+  
+  .btn.github:hover {
+    background-color: #282525 ;
+  }
+  
+  .btn.portfolio {
+    background-color: #191970; /* Azul escuro espacial */
+    background-image: linear-gradient(to right, #505c804e, #6a4c9c4e); /* Gradiente de azul para roxo */
+  }
+  
+  .btn.portfolio:hover {
+    background-color: #121251; /* Azul mais escuro no hover */
+  }
+  
+  /* Responsividade */
+  @media (max-width: 500px) {
+    h1 {
+      font-size: 1.5rem;
+    }
+  
+    .btn {
+      font-size: 0.9rem;
+    }
+  }
+
+  @keyframes appear_up {
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 100;
+    }
+    
+  }
