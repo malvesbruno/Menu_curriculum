@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bruno Massuete Alves - Links</title>
-  <link rel="stylesheet" href="/src/css/style.css">
+  <link rel="stylesheet" href="src/css/style.css">
   <link rel="icon" type="image/x-icon" href="src/icon/link.ico">
   <script src="src/js/actions.js"></script>
 </head>
@@ -14,9 +14,24 @@
     <h1>Olá, sou Bruno Massuete Alves</h1>
     <p>Explore meus links profissionais abaixo:</p>
     <div class="buttons">
-        <button class="btn linkedin" onclick="openLinkedin()"><img src="src/imgs/vecteezy_linkedin-logo-png-linkedin-logo-transparent-png-linkedin_23986970.png" height="40" width="40">Linkedin</button>
-        <button class="btn portfolio" onclick="openPortfolio()"><img src="src/imgs/portfolio (4).png" height="25" width="25">Portfolio</button>
-        <button class="btn github" onclick="openGithub()"><img src="src/imgs/github-seeklogo.png" height="30" width="30" style="filter: invert(1)">Github</button>
+        <button class="btn linkedin" onclick="openLinkedin()">
+          <div class="img_part">
+            <img src="src/imgs/vecteezy_linkedin-logo-png-linkedin-logo-transparent-png-linkedin_23986970.png" height="30" width="30" style="transform: scale(140%);">
+          </div>
+          Linkedin
+        </button>
+        <button class="btn portfolio" onclick="openPortfolio()">
+          <div class="img_part">
+            <img src="src/imgs/portfolio (4).png" height="30" width="30">
+        </div>
+          Portfolio
+        </button>
+        <button class="btn github" onclick="openGithub()">
+          <div class="img_part">
+            <img src="src/imgs/github-seeklogo.png" height="30" width="30" style="filter: invert(1)" style="transform: translatex(20px)">
+          </div>
+          Github
+        </button>
     </div>
   </div>
 </div>
